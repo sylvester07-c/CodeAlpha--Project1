@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+ 
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Image Gallery</h1>
+        <!-- Thumbnail Images -->
+        <div class="gallery-grid">
+            <img src="./pexels-alexandr-meadow-1505505-29715958.jpg" alt="Image 1" class="gallery-image" onclick="openLightbox(0)">
+            <img src="./pexels-cottonbro-6182887.jpg" alt="Image 2" class="gallery-image" onclick="openLightbox(1)">
+            <img src="./pexels-efrem-efre-2786187-29551244.jpg" alt="Image 3" class="gallery-image" onclick="openLightbox(2)">
+            <img src="./pexels-est1307-250177.jpg" alt="Image 4" class="gallery-image" onclick="openLightbox(3)">
+            <img src="./pexels-lina-1740756.jpg" alt="Image 12" class="gallery-image" onclick="openLightbox(7)">
+            <img src="./pexels-george-dolgikh-551816-1303090.jpg" alt="Image 5" class="gallery-image" onclick="openLightbox(4)">
+            <img src="./pexels-picjumbo-com-55570-196648.jpg" alt="Image 9" class="gallery-image" onclick="openLightbox(9)">
+            <img src="./pexels-leeloothefirst-5723940.jpg" alt="Image 11" class="gallery-image" onclick="openLightbox(6)">
+            <img src="./pexels-jameel-754430.jpg" alt="Image 6" class="gallery-image" onclick="openLightbox(5)">
+            <img src="./pexels-cottonbro-3149896.jpg" alt="Image 14" class="gallery-image" onclick="openLightbox(14)">
+            <img src="./pexels-dimitri-baret-3505176-18318725.jpg" alt="Image 10" class="gallery-image" onclick="openLightbox(10)">
+            <img src="./pexels-pixabay-221082.jpg" alt="Image 8" class="gallery-image" onclick="openLightbox(8)">
+            <img src="./pexels-dimitri-baret-3505176-18318725.jpg" alt="Image 10" class="gallery-image" onclick="openLightbox(10)">
+            <img src="./pexels-olly-716658.jpg" alt="Image 6" class="gallery-image" onclick="openLightbox(11)">
+            <img src="./pexels-timmossholder-383646.jpg" alt="Image 7" class="gallery-image" onclick="openLightbox(12)">
+            <img src="./pexels-line-knipst-574109081-18449296.jpg" alt="Image 13" class="gallery-image" onclick="openLightbox(13)">
+    
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image" class="lightbox-content">
+        <div class="navigation">
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </div>
+
+     <script src="./script.js"></script>   
+</body>
+</html>
